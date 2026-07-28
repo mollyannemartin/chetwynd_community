@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+}
+
+nav ul li {
+    margin: 10px 5px;
+    height: 40px;
+    width: 250px;
+    padding: 0;
+    border: 2px solid darkred;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.logo span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#ch40 img,
+#ch38 img,
+#softplay img {
+    height: 200px;
+}
+
+section {
+    margin: 20px 10px;
+}
+
+#availability-calendar {
+    font-size: 80px;
+    justify-content: center;
+}
+
+.button {
+    border: 4px solid navy;
+    width: 70%;
+    background-color: lightgreen;
+    color: rgb(0, 49, 0);
+    
+}
