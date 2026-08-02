@@ -1,3 +1,6 @@
+/* ================ 
+Global Styles 
+================ */
 * {
     margin: 0;
     padding:0;
@@ -19,6 +22,14 @@ main {
     align-self: center;
 }
 
+section {
+    margin: 20px 10px;
+}
+
+
+/* ==================== 
+Header and Navigation 
+==================== */
 header {
 /*    position: fixed;
     width: 100%;
@@ -73,31 +84,13 @@ nav ul li {
     color: whitesmoke;
 }
 
-#ch40 img,
-#ch38 img,
-#softplay img {
-    height: 200px;
-}
 
-section {
-    margin: 20px 10px;
-}
-
-#availabilitybutton {
-    font-size: 80px;
-    text-decoration: none;
-    width: 70%;
-}
-
-#book-buttons {
+/* ================ 
+Buttons 
+================ */
+#button-group {
     display: flex;
 
-}
-
-.book {
-    font-size: 40px;
-    text-decoration: none;
-    width: 45%;
 }
 
 .button {
@@ -110,18 +103,38 @@ section {
     
 }
 
-.center-heading {
-    text-align: center;
+.book {
+    font-size: 40px;
+    text-decoration: none;
+    width: 45%;
 }
 
-.center-heading ul {
-    list-style: none;
+.large-button {
+    font-size: 80px;
+    text-decoration: none;
+    width: 70%;
 }
 
+
+/* ================ 
+Images
+================ */
 .heroimg img {
-    height: 70%;
+    width: 70%;
 }
 
+.profile img {
+    height: 150px;
+}
+
+.facility img {
+    height: 200px;
+}
+
+
+/* ================ 
+Components
+================ */
 .profile {
     display: inline-block;
     margin: 40px auto;
@@ -130,6 +143,10 @@ section {
     width: 70%;
 }
 
-.profile img {
-    height: 150px;
+.introduction {
+    text-align: center;
+}
+
+.introduction ul {
+    list-style: none;
 }
