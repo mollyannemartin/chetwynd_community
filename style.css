@@ -10,13 +10,19 @@ body {
 
 main {
     position: relative;
-    top: 150px;
+/*    top: 150px; */
+    margin: 40px auto;
+    padding: 20px 30px 40px 30px;
+    background-color: #FFFFFF;
+    width: 75%;
+    border-radius: 4px;
+    align-self: center;
 }
 
 header {
-    position: fixed;
+/*    position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 1; */
     background-color: darkred;
     top: 0;
 }
@@ -37,7 +43,7 @@ nav ul {
 nav ul li {
     margin: 1px;
     height: 40px;
-    width: 14.5%;
+    width: 25%;
     padding: 0;
     border: 4px solid black;
     align-content: center;
@@ -98,9 +104,32 @@ section {
     display: flex;
     justify-content: center;
     border: 4px solid navy;
-    
     background-color: lightgreen;
     color: rgb(0, 49, 0);
     margin:5px auto;
     
+}
+
+.center-heading {
+    text-align: center;
+}
+
+.center-heading ul {
+    list-style: none;
+}
+
+.heroimg img {
+    height: 200px;
+}
+
+.profile {
+    display: inline-block;
+    margin: 40px auto;
+    padding: 20px 30px 40px 30px;
+    background-color: burlywood;
+    width: 70%;
+}
+
+.profile img {
+    height: 150px;
 }
