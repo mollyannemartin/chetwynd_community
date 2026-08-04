@@ -126,9 +126,14 @@ Images
 .profile img {
     height: 150px;
 }
-
+/*
 .facility img {
     height: 200px;
+}
+*/
+.timetable {
+    width: 100%;
+    height: auto;
 }
 
 
