@@ -17,7 +17,7 @@ main {
     margin: 40px auto;
     padding: 20px 30px 40px 30px;
     background-color: #FFFFFF;
-    width: 75%;
+    width:min(1200px,90%);
     border-radius: 4px;
     align-self: center;
 }
@@ -79,7 +79,7 @@ nav ul li {
 }
 
 .logo span {
-    font-size: 50px;
+    font-size:clamp(1.6rem,5vw,3rem);
     font-weight: bold;
     color: whitesmoke;
 }
@@ -120,20 +120,28 @@ Buttons
 Images
 ================ */
 .heroimg img {
-    width: 70%;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .profile img {
+    width: 150px;
     height: 150px;
 }
-/*
+
 .facility img {
-    height: 200px;
-}
-*/
-.timetable {
-    width: 100%;
+    width: 70%;
     height: auto;
+    border-radius: 6px;
+}
+
+.timetable {
+    min-width: 900px;
+}
+
+.calendar-wrap {
+    overflow-x: auto;
 }
 
 
