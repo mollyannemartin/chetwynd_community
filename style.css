@@ -40,28 +40,54 @@ header {
 
 header a {
     text-decoration: none;
-    color: black;
+}
+
+nav {
+    background-color: lightcoral;
+    box-shadow: 0 1px 5px black;
 }
 /*
 nav ul {
     list-style: none;
     display: flex;
-    font-size: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  /*  font-size: 100%;
     font-weight: bold;
-    margin: 2px;
+    margin: 2px;  */
 }
 
-nav ul li {
-    margin: 1px;
-    height: 40px;
-    width: 25%;
+nav li {
+    margin: 2px;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+ /*   width: 25%;
     padding: 0;
     border: 4px solid black;
     align-content: center;
     justify-content: center;
+    align-items: center; */
+    background-color: lightcoral;
+}
+
+nav a {
     display: flex;
     align-items: center;
-    background-color: lightcoral;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    border-bottom: 2px solid whitesmoke;
 }
 */
 
@@ -127,10 +153,10 @@ Buttons
 /* ================ 
 Images
 ================ */
-.heroimg img {
-    width: 100%;
-    height: auto;
-    display: block;
+.welcome {
+    height: 200px;
+    background-image: url(./images/welfare.jpg);
+    background-position: center center;
 }
 
 .profile img {
@@ -171,3 +197,55 @@ Components
 .introduction ul {
     list-style: none;
 }
+
+
+
+
+
+
+/* ===================================================================================
+Start of copied code 
+Learn this at a later date - just using as a placeholder to get website ready to launch
+Menu button - hidden on desktop 
+====================================================================================*/
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        font-size: 30px;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav#main-nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav#main-nav.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav#main-nav a {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+/* ===================================================================================
+End of copied code 
+====================================================================================*/
