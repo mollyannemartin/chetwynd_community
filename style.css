@@ -82,12 +82,12 @@ nav {
 }
 
 .logo img {
-    width: 80px;
+    width: 60px;
     padding: 4px;
 }
 
 .logo span {
-    font-size:clamp(1.6rem,5vw,3rem);
+    font-size:clamp(1.6rem,5vw,2rem);
     font-weight: bold;
     color: whitesmoke;
 }
@@ -112,13 +112,13 @@ Buttons
 }
 
 .book {
-    font-size: 40px;
+    font-size: 1.2rem;
     text-decoration: none;
     width: 45%;
 }
 
 .large-button {
-    font-size: 80px;
+    font-size: 4rem;
     text-decoration: none;
     width: 70%;
 }
