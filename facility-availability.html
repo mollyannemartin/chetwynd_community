@@ -12,25 +12,41 @@
                 <span>Chilwell Station Welfare</span>
             </a>
             
-            <button class="menu-toggle" id="menu-toggle">☰ Menu</button>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
 
             <nav>
                 <ul id="nav-menu">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./welfare-support.html">Welfare & Support</a></li>
                     <li><a href="./contact-house.html">Facilities</a></li>
-                    <li><a href="./whats-on.html">What's on</a></li>
+                    <li class="dropdown">
+                        <button class="dropdown-button" id="community-button">
+                            Community <span>▼</span>
+                        </button>
+                        <ul class="dropdown-menu" id="community-menu">
+                            <li><a href="./whats-on.html">What's On</a></li>
+                            <li><a href="./community-hub.html">Community Hub</a></li>
+                            <li><a href="./activities-clubs.html">Activities & Clubs</a></li>
+                        </ul>
+                    </li>
                     <li><a href="./localarea.html">Local Area</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
-                <p>Availability is updated regularly but may change between updates. A booking is only confirmed once you receive confirmation from the Welfare team.</p>
-            </section>
+            <section class="availability-intro">
 
+                <h1>Facility Availability</h1>
+
+                <p>
+                    Check the calendar below for current availability.
+                    Please note that availability may change and bookings
+                    are only confirmed once you receive confirmation from
+                    the Welfare Team.
+                </p>
+
+            </section>
             <section>
-                <h1>Facility availability calendar</h1>
                 <div class="calendar-wrap">
                     <img class="timetable" src="./images/contact-house-availability- 27-july-2026.png">
                 </div>

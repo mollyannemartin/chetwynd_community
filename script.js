@@ -56,3 +56,16 @@ document.querySelectorAll(".slider").forEach(function(slider) {
     });
 
 });
+
+// =========================
+// COMMUNITY DROPDOWN
+// =========================
+
+const communityButton = document.querySelector("#community-button");
+const communityDropdown = document.querySelector(".dropdown");
+
+communityButton.addEventListener("click", () => {
+
+    communityDropdown.classList.toggle("open");
+
+});
