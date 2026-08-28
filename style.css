@@ -1266,9 +1266,80 @@ End of copied code
     padding: 0 10px;
 }
 
-.form-sections input {
-   width: 50%;   
-   padding: 3px;
-   border: 1px solid lightcoral;
-   border-radius: 5px;
+.form-sections input[type="text"],
+.form-sections input[type="email"],
+.form-sections input[type="tel"],
+.form-sections input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.form-sections input[type="radio"],
+.form-sections input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form-sections > label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-sections input[type="radio"] + label {
+    display: inline;
+    margin-right: 15px;
+}
+
+.form-sections h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Specific input widths */
+
+#mobile-number {
+    max-width: 250px;
+}
+
+#arrival-date,
+#departure-date {
+    max-width: 250px;
+}
+
+#reason-of-booking {
+    max-width: 500px;
+}
+
+#guest1 {
+    max-width: 500px;
+}
+
+#petbreed {
+    max-width: 400px;
+}
+
+#signiture {
+    max-width: 500px;
+}
+
+/* Submit button */
+
+#submit-request {
+    width: auto;
+    padding: 10px 25px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#submit-request:hover {
+    background-color: #a00000;
 }
