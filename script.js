@@ -83,3 +83,25 @@ communityButton.addEventListener("click", () => {
     communityDropdown.classList.toggle("open");
 
 });
+
+// ============================
+// Number of nights calculated
+// ============================
+const arrivalDate = document.getElementById("arrival-date");
+const departureDate = document.getElementById("departure-date");
+const numberOfNights = document.getElementById("number-of-nights");
+
+function calculateNights() {
+    const arrival = new Date(arrivalDate.value);
+    const departure = new Date(departureDate.value);
+
+    if (arrivalDate.value && departureDate.value) {
+        const difference = departure - arrival;
+        const nights = difference / (1000 * 60 * 60 * 24);
+
+        numberOfNights.value = nights;
+    }
+}
+
+arrivalDate.addEventListener("change", calculateNights);
+departureDate.addEventListener("change", calculateNights);

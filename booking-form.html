@@ -54,16 +54,35 @@
                         <legend>About You</legend>
 
                         <label for="number-rank-name">Number, Rank, Name</label>
-                        <input type="text" id="number-rank-name" name="number-rank-name" placeholder="12345678 Pte Smith">
+                        <input 
+                        type="text" 
+                        id="number-rank-name" 
+                        name="number-rank-name" 
+                        placeholder="12345678 Pte Smith"
+                        required>
 
                         <label for="department-unit-address">Department/Unit/Address</label>
-                        <input type="text" id="department-unit-address" name="department-unit-address" placeholder="43 HQ and SP SQN">
+                        <input 
+                        type="text" 
+                        id="department-unit-address" 
+                        name="department-unit-address" 
+                        placeholder="43 HQ and SP SQN">
 
                         <label for="mobile-number">Mobile Number</label>
-                        <input type="tel" id="mobile-number" name="mobile-number" placeholder="07123456789">
+                        <input 
+                        type="tel" 
+                        id="mobile-number" 
+                        name="mobile-number" 
+                        placeholder="07123456789"
+                        required>
 
                         <label for="modnet-email">MODNET Email</label>
-                        <input type="email" id="modnet-email" name="modnet-email" placeholder="example123@mod.gov.uk">
+                        <input 
+                        type="email" 
+                        id="modnet-email" 
+                        name="modnet-email" 
+                        placeholder="example123@mod.gov.uk"
+                        required>
                     
                     </fieldset>
                 
@@ -72,20 +91,46 @@
                     <fieldset class="form-sections">
                         <legend>Your Stay</legend>
                         <label for="arrival-date">Date of Arrival</label>
-                        <input type="date" id="arrival-date" name="arrival-date">
+                        <input 
+                        type="date" 
+                        id="arrival-date" 
+                        name="arrival-date"
+                        required>
 
                         <label for="departure-date">Date of Departure</label>
-                        <input type="date" id="departure-date" name="departure-date">
+                        <input 
+                        type="date" 
+                        id="departure-date" 
+                        name="departure-date"
+                        required>
+
+                        <label for="number-of-nights">Number of Nights</label>
+                        <input 
+                        type="number" 
+                        name="number-of-nights" 
+                        id="number-of-nights"
+                        readonly>
 
                         <label for="reason-of-booking">Reason for Booking</label>
-                        <input type="text" id="reason-of-booking" name="reason-of-booking" placeholder="Family Visit">
+                        <input 
+                        type="text" 
+                        id="reason-of-booking" 
+                        name="reason-of-booking" 
+                        placeholder="Family Visit">
 
                         <h3>Which house would you prefer?</h3>
 
-                        <input type="radio" name="house-preference" id="ch38wr">
+                        <input 
+                        type="radio" 
+                        name="house-preference" 
+                        id="ch38wr"
+                        required>
                         <label for="ch38wr">38 Williams Road</label>
 
-                        <input type="radio" name="house-preference" id="ch40wr">
+                        <input 
+                        type="radio" 
+                        name="house-preference" 
+                        id="ch40wr">
                         <label for="ch40wr">40 Williams Road</label>
 
                     </fieldset>
@@ -96,7 +141,32 @@
                         <legend>Guest Details</legend>
 
                         <label for="guest1">Guest 1 name</label>
-                        <input type="text" id="guest1" name="guest1" placeholder="John Doe">
+                        <input 
+                        type="text" 
+                        id="guest1" 
+                        name="guest1" 
+                        placeholder="John Doe">
+
+                        <label for="guest1">Guest 2 name</label>
+                        <input 
+                        type="text" 
+                        id="guest2" 
+                        name="guest2" 
+                        placeholder="Jane Doe">
+
+                        <label for="guest1">Guest 3 name</label>
+                        <input 
+                        type="text" 
+                        id="guest3" 
+                        name="guest3" 
+                        placeholder="David Doe">
+
+                        <label for="guest1">Guest 4 name</label>
+                        <input 
+                        type="text" 
+                        id="guest4" 
+                        name="guest4" 
+                        placeholder="Sarah Doe">
                     </fieldset>
 
                 <!--Guest Information section of the form-->
@@ -106,39 +176,132 @@
                         
                         <h3>Does anyone in your party have a pet allergy?</h3>
 
-                        <input type="radio" name="allergy" id="yes-allegy">
+                        <input 
+                        type="radio" 
+                        name="allergy" 
+                        id="yes-allegy">
                         <label for="yes-allergy">Yes</label>
 
-                        <input type="radio" name="allergy" id="no-allegy">
+                        <input 
+                        type="radio" 
+                        name="allergy" 
+                        id="no-allegy">
                         <label for="no-allergy">No</label>
 
                         <h3>Are you bringing a pet?</h3>
 
-                        <input type="radio" name="pet" id="yes-pet">
+                        <input 
+                        type="radio" 
+                        name="pet" 
+                        id="yes-pet">
                         <label for="yes-pet">Yes</label>
 
-                        <input type="radio" name="pet" id="no-pet">
+                        <input 
+                        type="radio" 
+                        name="pet" 
+                        id="no-pet">
                         <label for="no-pet">No</label>
 
                         <h3>If YES</h3>
 
                         <label for="petbreed">Pet Type/Breed</label>
-                        <input type="text" id="petbreed" name="petbreed" placeholder="Dog Labrador">
+                        <input 
+                        type="text" 
+                        id="petbreed" 
+                        name="petbreed" 
+                        placeholder="Dog Labrador">
                         
                     </fieldset>
 
                     <!--Confirmation section-->
 
+                    <!-- Terms and Conditions -->
                     <fieldset class="form-sections">
-                        <input type="checkbox" name="t-and-cs" id="t-and-cs">
-                        <label for="t-and-cs">I have read and agree to the Terms & Conditions.</label>
-                        
-                        <input type="checkbox" name="tc-understood" id="tc-understood">
-                        <label for="tc-understood">I understand that the property must be cleaned before departure and bedding returned to the designated location.</label>
-                        
+                        <legend>Terms & Conditions</legend>
+
+                        <details>
+                            <summary>Please read the Terms & Conditions before submitting your request</summary>
+
+                            <h3>Booking Information</h3>
+                            <p>
+                                House bookings are subject to availability and are not confirmed
+                                until you have received confirmation from the Welfare Office.
+                            </p>
+
+                            <h3>Arrival and Departure</h3>
+                            <p>
+                                Guests must arrive and depart at the agreed times. Any changes to
+                                your booking should be communicated to the Welfare Office as soon
+                                as possible.
+                            </p>
+
+                            <h3>Guests</h3>
+                            <p>
+                                Only the guests listed on the booking request may stay at the
+                                property. Please ensure all guest details are provided accurately.
+                            </p>
+
+                            <h3>Pets and Allergies</h3>
+                            <p>
+                                Pets must be declared on the booking request. Guests are responsible
+                                for informing the Welfare Office of any allergies or other relevant
+                                requirements before their stay.
+                            </p>
+
+                            <h3>Property and Cleaning</h3>
+                            <p>
+                                The property must be left clean and tidy before departure.
+                                All bedding must be removed and returned to the designated location.
+                            </p>
+
+                            <h3>Damage</h3>
+                            <p>
+                                Any damage to the property or its contents must be reported to the
+                                Welfare Office as soon as possible.
+                            </p>
+
+                            <h3>Cancellation</h3>
+                            <p>
+                                If you need to cancel your booking, please notify the Welfare Office
+                                as soon as possible so that the accommodation can be made available
+                                to others.
+                            </p>
+
+                        </details>
+
+                        <div class="agreement">
+                            <input
+                                type="checkbox"
+                                id="terms-agreement"
+                                name="terms-agreement"
+                                required
+                            >
+                            <label for="terms-agreement">
+                                I have read and agree to the Terms & Conditions.
+                            </label>
+                        </div>
+
+                        <div class="agreement">
+                            <input
+                                type="checkbox"
+                                id="cleaning-agreement"
+                                name="cleaning-agreement"
+                                required
+                            >
+                            <label for="cleaning-agreement">
+                                I understand that the property must be cleaned before departure
+                                and bedding returned to the designated location.
+                            </label>
+                        </div>
+
                         <label for="signature">Full name / Electronic signature</label>
-                        <input type="text" id="signature" name="signature">
-                        
+                        <input
+                            type="text"
+                            id="signature"
+                            name="signature"
+                            required
+                        >
+
                     </fieldset>
 
                     <!--Submit button-->

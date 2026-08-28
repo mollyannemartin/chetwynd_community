@@ -1269,7 +1269,8 @@ End of copied code
 .form-sections input[type="text"],
 .form-sections input[type="email"],
 .form-sections input[type="tel"],
-.form-sections input[type="date"] {
+.form-sections input[type="date"],
+.form-sections input[type="number"] {
     width: 100%;
     padding: 8px;
     border: 1px solid lightcoral;
@@ -1289,7 +1290,8 @@ End of copied code
     margin-bottom: 5px;
 }
 
-.form-sections input[type="radio"] + label {
+.form-sections input[type="radio"] + label,
+.form-sections input[type="checkbox"] + label {
     display: inline;
     margin-right: 15px;
 }
@@ -1300,7 +1302,68 @@ End of copied code
     font-size: 1.1rem;
 }
 
+.checkbox-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin: 3px 0 0 0;
+}
+
+.checkbox-option label {
+    display: inline;
+}
+
+/* Terms and Conditions */
+
+.form-sections details {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.form-sections summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.form-sections details p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.agreement input[type="checkbox"] {
+    width: auto;
+    flex-shrink: 0;
+    margin-top: 3px;
+    margin-right: 0;
+}
+
+.agreement label {
+    display: inline;
+    margin: 0;
+}
+
 /* Specific input widths */
+
+#number-of-nights {
+    width: 150px;
+}
 
 #mobile-number {
     max-width: 250px;
