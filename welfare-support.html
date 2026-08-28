@@ -22,11 +22,17 @@
                 <ul id="nav-menu">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./welfare-support.html">Welfare & Support</a></li>
-                    <li><a href="./contact-house.html">Facilities</a></li>
-                    <li class="dropdown">
-                        <button class="dropdown-button" id="community-button">
-                            Community <span>▼</span>
-                        </button>
+
+                    <li class="dropdown" id="facilities-dropdown">
+                        <button class="dropdown-button" id="facilities-button">Facilities <span>▼</span></button>
+                        <ul class="dropdown-menu" id="facilities-menu">
+                            <li><a href="./contact-house.html">Welfare Facilities</a></li>
+                            <li><a href="./otherfacilities.html">Other Facilities</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown" id="community-dropdown">
+                        <button class="dropdown-button" id="community-button">Community <span>▼</span></button>
                         <ul class="dropdown-menu" id="community-menu">
                             <li><a href="./whats-on.html">What's On</a></li>
                             <li><a href="./community-hub.html">Community Hub</a></li>
@@ -43,7 +49,7 @@
                 <p>The Welfare Team is here to support service personnel and their families. Whether you need practical advice, financial guidance or someone to point you in the right direction, we're here to help.</p>
             </section>
             <section>
-                <h2>Meet the Team</h2>
+                <h2 id="meet-team">Meet the Team</h2>
                 <div class="profiles">
                     <section class="profile">
                         <img src="./images/welfare-officer-headshot.jpg" alt="Profile of welfare officer">
@@ -335,8 +341,7 @@
                 <details>
                     <summary>How do I contact the welfare team?</summary>
                     <p>
-                        You can contact a member of the welfare team using the contact
-                        details provided on this page.
+                        You can contact a member of the welfare team using the <a href="#meet-team">contact details</a> provided on this page.
                     </p>
                 </details>
 

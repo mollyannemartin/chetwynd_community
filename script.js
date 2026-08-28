@@ -57,12 +57,26 @@ document.querySelectorAll(".slider").forEach(function(slider) {
 
 });
 
+
+// =========================
+// Facility DROPDOWN
+// =========================
+
+const facilitiesButton = document.querySelector("#facilities-button");
+const facilitiesDropdown = document.querySelector("#facilities-dropdown");
+
+facilitiesButton.addEventListener("click", () => {
+
+    facilitiesDropdown.classList.toggle("open");
+
+});
+
 // =========================
 // COMMUNITY DROPDOWN
 // =========================
 
 const communityButton = document.querySelector("#community-button");
-const communityDropdown = document.querySelector(".dropdown");
+const communityDropdown = document.querySelector("#community-dropdown");
 
 communityButton.addEventListener("click", () => {
 
