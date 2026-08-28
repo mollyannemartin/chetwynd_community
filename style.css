@@ -162,18 +162,20 @@ nav a:hover {
 
 .dropdown-menu {
     display: none;
-    position: static;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
     background-color: #ffffff;
     min-width: 180px;
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 0;
     margin: 0;
     list-style: none;
-}
 
-.dropdown-menu.show {
-    display: block;
-}
+    z-index: 1000;
+} 
 
 /* Dropdown links */
 
@@ -1071,6 +1073,17 @@ Menu button - hidden on desktop
         display: flex;
     }
 
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        min-width: 0;
+        box-shadow: none;
+    }
+
+    .dropdown.open .dropdown-menu {
+        display: block;
+    }
+
     .profiles {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -1227,4 +1240,35 @@ End of copied code
         padding: 16px 20px;
     }
 
+}
+
+/*========================
+   Booking form page
+========================*/
+.form-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form-sections {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #8b0000;
+    border-radius: 8px;
+}
+
+.form-sections legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.form-sections input {
+   width: 50%;   
+   padding: 3px;
+   border: 1px solid lightcoral;
+   border-radius: 5px;
 }
