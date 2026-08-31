@@ -775,6 +775,10 @@ Profile Cards
     object-position: center 10%;
 }
 
+img.uwo-headshot {
+    object-position: 40%;
+}
+
 .profile h2 {
     margin: 15px 0 5px;
 }
