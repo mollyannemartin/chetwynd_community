@@ -768,10 +768,11 @@ Profile Cards
 }
 
 .profile img {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
+    object-position: center 10%;
 }
 
 .profile h2 {
